@@ -151,16 +151,22 @@ var wuli = null;
 var angle = 0;
 
 function setup(){
-    createCanvas(1013, 586);
+    createCanvas(windowWidth, windowHeight);
     ellipseMode(RADIUS);
     wuli = new WuLi(this);
-    rectMode(CENTER);
 }
 
 
+var step = Math.floor(Math.random()*10);
+var change = 0;
 function draw(){
     background(0, 0, 0);
+    rectMode(CORNERS)
+    textSize(12);
+    fill(255, 255, 255);
+    text("tempo: "+second(), 200, 200, 70, 80)
     push()
+    rectMode(CENTER);
     translate(width/2, height/2);
     rotate(angle);
     translate(-width/2, -height/2);
@@ -168,5 +174,12 @@ function draw(){
     wuli.pontos();
     wuli.lines();
     pop()
-    angle += Math.PI*0.01
+    change = second()
+    if(change % step === 0){
+	step = Math.floor(Math.random()*10)+1;
+	angle = Math.random() * 2 * Math.PI;
+	console.log(step)
+	console.log(angle)
+    }
+    
 }
