@@ -2,6 +2,7 @@
 function WuLi(p5){
     this.p5 = p5;
     this.point = function(type, x, y){
+	
 	var p = {
 	    x: x,
 	    y: y,
@@ -99,68 +100,73 @@ function WuLi(p5){
 	    if(i>9){
 		this.point('triangulo', this.points[i].x, this.points[i].y)
 	    }
-	 }
-     }
+	}
+    }
 
-     this.lines = function(){
-	 this.p5.stroke(255, 255, 255);
-	 for(var i=0; i<this.points.length; i++){
-	     if(i<3){
-		 p5.line(this.points[i].x, this.points[i].y, this.points[i+1].x, this.points[i+1].y)
-	     }
-	     if(i===3){
-		 p5.line(this.points[i].x, this.points[i].y, this.points[1].x, this.points[1].y)
-	     }
-	     if(i===4){
-		 p5.line(this.points[1].x, this.points[1].y, this.points[i].x, this.points[i].y)
-	     }
-	     if(i===5){
-		 p5.line(this.points[2].x, this.points[2].y, this.points[i].x, this.points[i].y)
-	     }
-	     if(i===6){
-		 p5.line(this.points[0].x, this.points[0].y, this.points[i].x, this.points[i].y)
-	     }
-	     if(i===7){
-		 p5.line(this.points[2].x, this.points[2].y, this.points[i].x, this.points[i].y)
-		 p5.line(this.points[6].x, this.points[6].y, this.points[i].x, this.points[i].y)
-		 p5.line(this.points[5].x, this.points[5].y, this.points[i].x, this.points[i].y)
-	     }
-	     if(i===8){
-		 p5.line(this.points[3].x, this.points[3].y, this.points[i].x, this.points[i].y)
-		 p5.line(this.points[4].x, this.points[4].y, this.points[i].x, this.points[i].y)
-		 p5.line(this.points[5].x, this.points[5].y, this.points[i].x, this.points[i].y)
-	     }
-	     if(i===9){
-		 p5.line(this.points[4].x, this.points[4].y, this.points[i].x, this.points[i].y)
-	     }
-	     if(i===10){
-		 p5.line(this.points[0].x, this.points[0].y, this.points[i].x, this.points[i].y)
-		 p5.line(this.points[9].x, this.points[9].y, this.points[i].x, this.points[i].y)
-	     }
-	     if(i===11){
-		 p5.line(this.points[1].x, this.points[1].y, this.points[i].x, this.points[i].y)
-		 p5.line(this.points[10].x, this.points[10].y, this.points[i].x, this.points[i].y)
-	     }
-	 }
-     }
+    this.lines = function(){
+	this.p5.stroke(255, 255, 255);
+	for(var i=0; i<this.points.length; i++){
+	    if(i<3){
+		p5.line(this.points[i].x, this.points[i].y, this.points[i+1].x, this.points[i+1].y)
+	    }
+	    if(i===3){
+		p5.line(this.points[i].x, this.points[i].y, this.points[1].x, this.points[1].y)
+	    }
+	    if(i===4){
+		p5.line(this.points[1].x, this.points[1].y, this.points[i].x, this.points[i].y)
+	    }
+	    if(i===5){
+		p5.line(this.points[2].x, this.points[2].y, this.points[i].x, this.points[i].y)
+	    }
+	    if(i===6){
+		p5.line(this.points[0].x, this.points[0].y, this.points[i].x, this.points[i].y)
+	    }
+	    if(i===7){
+		p5.line(this.points[2].x, this.points[2].y, this.points[i].x, this.points[i].y)
+		p5.line(this.points[6].x, this.points[6].y, this.points[i].x, this.points[i].y)
+		p5.line(this.points[5].x, this.points[5].y, this.points[i].x, this.points[i].y)
+	    }
+	    if(i===8){
+		p5.line(this.points[3].x, this.points[3].y, this.points[i].x, this.points[i].y)
+		p5.line(this.points[4].x, this.points[4].y, this.points[i].x, this.points[i].y)
+		p5.line(this.points[5].x, this.points[5].y, this.points[i].x, this.points[i].y)
+	    }
+	    if(i===9){
+		p5.line(this.points[4].x, this.points[4].y, this.points[i].x, this.points[i].y)
+	    }
+	    if(i===10){
+		p5.line(this.points[0].x, this.points[0].y, this.points[i].x, this.points[i].y)
+		p5.line(this.points[9].x, this.points[9].y, this.points[i].x, this.points[i].y)
+	    }
+	    if(i===11){
+		p5.line(this.points[1].x, this.points[1].y, this.points[i].x, this.points[i].y)
+		p5.line(this.points[10].x, this.points[10].y, this.points[i].x, this.points[i].y)
+	    }
+	}
+    }
 
- }
+}
 
 var wuli = null;
-
- function setup(){
-     createCanvas(1013, 586);
-     ellipseMode(RADIUS);
-     wuli = new WuLi(this);
-     rectMode(RADIUS);
-     
- }
-
-var jitter = 0;
 var angle = 0;
- function draw(){
-     background(0, 0, 0);
-     wuli.espaco_planimetrico();
-     wuli.pontos();
-     wuli.lines();
+
+function setup(){
+    createCanvas(1013, 586);
+    ellipseMode(RADIUS);
+    wuli = new WuLi(this);
+    rectMode(CENTER);
+}
+
+
+function draw(){
+    background(0, 0, 0);
+    push()
+    translate(width/2, height/2);
+    rotate(angle);
+    translate(-width/2, -height/2);
+    wuli.espaco_planimetrico();
+    wuli.pontos();
+    wuli.lines();
+    pop()
+    angle += Math.PI*0.01
 }
