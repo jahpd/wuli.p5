@@ -6,15 +6,15 @@ canvas{
 
 nav{
     position: fixed;
-    left: 800px;
+    left: 77%;
     right: 0px;
 }
 
 #textual{
     position: fixed;
-    top: 440px;
+    top: 76%;
     bottom: 0px;
     left: 0px;
-    right: 251px;
+    right: 25%;
     overflow: scroll;
 }
