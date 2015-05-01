@@ -3,3 +3,18 @@ canvas{
     top: 0px;
     left:0px;
 }
+
+nav{
+    position: fixed;
+    left: 800px;
+    right: 0px;
+}
+
+#textual{
+    position: fixed;
+    top: 440px;
+    bottom: 0px;
+    left: 0px;
+    right: 251px;
+    overflow: scroll;
+}

@@ -1,0 +1,15 @@
+# Partitura Planimétrica
+
+Como parte do processo estruturativo, propomos uma pequena averiguação do termo planimetria para poder entender possibilidades suscitadas pela partitura-planimétrica, como diria [2], um modelo de improvisação coletiva. [3] apresenta dez características inerentes: 1) Não existem pontos de referências fixos; 2) predominância de parâmetros imprecisos; 3) Não existe ordem determinada para a seleção dos signos (quadrados, círculos, triângulos); 4) permutação entre os elementos constituintes (quadrados, círculos, triângulos) através das linhas de transição; 5) a unidade musical está assegurada pela estruturação gestáltica; 6) jogo contínuo entre som e silêncio [3]; 7) sinérese: união dos signos musicais por um processo de percepção que Koellreutter denomina sistática [1]; 8) conceitos musicais tradicionalmente colocados em oposição são colocados como parte de um todo;  9) substituição do desenvolvimento pela transformação, metamorfose; e 10) “o conjunto de elementos ou ocorências relativos a um fato estético – musical são imprevisíveis” [3]
+
+## Referências e notas
+
+[1] CARLSON, RICHARD. INTEGRAL IDEOLOGY An Ideological Genealogy of Integral Theory and Practice. An independent forum for a critical discussion of the integral philosophy of Ken Wilber. Disponível em: <http://www.integralworld.net/carlson.html#6>.
+
+[2] PUIG, Daniel. **Complexidade e metapadrões: pensamento sistêmico e composição musical com formas abertas, partituras gráficas, improvisação e eletrônica ao vivo.** Doutorado – USP, São Paulo, 2014. 210 p. 
+
+[3] KOELLREUTTER, Hans-Joachim. Introdução à estética e à composição musical contemporânea. 2. ed. Porto Alegre - RS: Movimento, 1987. 57 p. 18 v. (Coleção Luís Cosme). 
+
+[3] Neste ponto salientamos a utilização do termo _sensibilização do silêncio_.
+
+[4] Sístase é a conjunção ou o encaixar das partes em uma integralidade. O seu elemento acategórico é a integração de dimensão , através da qual o mundo espacial tridimensional , que é sempre um mundo das peças , está integrado como um todo de tal forma que ele pode ser indicado. Isto implica já que não é um esquema de ordenação paralela a do sistema (Gebser 1984). Como Feuerstein diz: 'Sístase é o contraste de sistematização, lidando propriamente com  <<arranjamento>> das intensidades (ao invés de quantificar  <<extensões>>)”. Tradução nossa de: Systasis is the conjoining or fitting together of parts into integrality. Its acategorical element is the integrating dimension by which the three- dimensional spatial world, which is always a world of parts, is integrated into a whole in such a way that it can be stated. This already implies that it is not an ordering schema paralleling that of system (Gebser 1984) As Feuerstein phrases it, 'Systasis, in contrast to systematization, deals with the proper <<arrangement>> of intensities (rather than quantified <<extensities>>)(CARLSON, 2015) 
