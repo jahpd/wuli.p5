@@ -69,14 +69,13 @@ $(document).ready(function(){
 
     $("#partitura").click(function(){
 	load('PARTITURA_PLANIMETRICA.md', "textual")
-	show_partitura = true;
-	show_analise = false;
+	show_partitura = !show_partitura;
     })
 
+    show_analise = false
     $("#analise").click(function(){
 	load('BARICENTRO.md', "textual");
-	show_partitura = false;
-	show_analise = true;
+	show_analise = !show_analise
     })
 
     load("README.md", "textual")
