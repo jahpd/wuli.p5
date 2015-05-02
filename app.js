@@ -1,6 +1,7 @@
 var wuli = null;
 var show_partitura = false;
 var show_analise = false;
+var percurso = []
 function setup(){
     createCanvas(1.5*windowWidth/2,1.5*windowHeight/2);
     ellipseMode(RADIUS);
@@ -15,9 +16,11 @@ function draw(){
 	wuli.muda()
     }
     if(show_analise){
-	wuli.analise_centro()
 	wuli.analise_baricentro()
 	wuli.getalts_basicos()
+    }
+    if(show_percursso){
+	wuli.percurso(percursso)
     }
 }
 
@@ -76,6 +79,28 @@ $(document).ready(function(){
     $("#analise").click(function(){
 	load('BARICENTRO.md', "textual");
 	show_analise = !show_analise
+    })
+
+    show_percursso = true
+    
+    $("#show_percursso").click(function(){
+	load('PERCURSSO.md', "textual");
+    })
+
+    $("#percursso_1").click(function(){
+	percursso = [0, 1, 3, 2, 4, 5, 6, 0]
+    })
+
+    $("#percursso_2").click(function(){
+	percursso = [0, 3, 1, 6, 5, 4, 2, 0]
+    })
+
+    $("#percursso_3").click(function(){
+	percursso = [0, 1, 6, 5, 4, 2, 3, 0]
+    })
+
+    $("#percursso_4").click(function(){
+	percursso = [0, 4, 5, 6, 1, 3, 2, 0]
     })
 
     load("README.md", "textual")

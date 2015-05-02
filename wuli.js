@@ -270,6 +270,25 @@ function WuLi(p5){
 	pop()
     }
 
+    this.percurso = function(pontos){
+	var callbacks = {
+	    width: this.p5.width/2,
+	    height: this.p5.height/2
+	}
+	push()
+	rectMode(CENTER);
+	translate(this.p5.width/2, this.p5.height/2);
+	rotate(angle);
+	translate(-this.p5.width/2, -this.p5.height/2);
+	stroke(0, 0, 255);
+	for(var i = 0; i<pontos.length; i++){
+	    if(i < pontos.length-1){
+		line(baricentros[pontos[i]].x, baricentros[pontos[i]].y, baricentros[pontos[i+1]].x, baricentros[pontos[i+1]].y)
+	    }
+	}
+	pop()
+    }
+
     
     var colors_label = [0, 255, 255];
 
@@ -289,7 +308,7 @@ function WuLi(p5){
 	    text(i, x, y);
 	}
 	pop()
-
     }
+
 
 }
